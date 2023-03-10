@@ -1,0 +1,138 @@
+body {
+    margin: auto;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    height:100vh;
+    width:100vw;
+    border:5px solid #17BEBB;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    overflow:hidden;
+    
+}
+
+#btns {
+    position: absolute;
+    top:25px;
+    left:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    z-index:1;
+}
+
+button {
+    cursor: pointer;
+    background-color: #EF3E36;
+    color: white;
+    font-size:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    height: 30px;
+    width:fit-content;
+    border-radius: 3px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color:#17BEBB;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+#slider {
+    height:100%;
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position:absolute;
+   
+ 
+}
+
+.mydiv {
+    text-align: center;
+    background-color:black;
+    color: white;
+    height: 100%;
+    width: 1356px;
+}
+
+.mydiv > h1 {
+    margin: auto;
+    margin-top: 250px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    display: block;
+    background-color: #17BEBB;
+    color: white;
+    padding:2px 10px;
+    width: fit-content;
+}
+
+.mydiv > p {
+    font-size:15px;
+    margin: auto;
+    margin-top:15px;
+    background-color: #17BEBB;
+    color: white;
+    padding: 5px 10px;
+    width: 80%;
+}
+
+.mydiv > button {
+    margin: auto;
+    margin-top:40px;
+    font-size:15px;
+}
+
+#bir {
+    background-image: url("images/bir.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#iki {
+    background-image: url("images/iki.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#uc {
+    background-image: url("images/uc.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#dort {
+    background-image: url("images/dort.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#bes {
+    background-image: url("images/bes.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

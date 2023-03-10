@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+<div id="btns">
+    <button id="btn1">Link 1</button>
+    <button id="btn2">Link 2</button>
+    <button id="btn3">Link 3</button>
+    <button id="btn4">Link 4</button>
+    <button id="btn5">Link 5</button>
+</div>
+
+<div id="container">
+
+    <div id="slider">
+    <div class="mydiv" id="bir">
+        <h1>Text 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas fringilla lacus a consectetur. Sed consectetur, lectus in cursus lacinia, lorem tortor porta metus, a hendrerit est mauris vitae ligula.</p>
+        <button class="divbtn">Learn More</button>
+    </div>
+    <div class="mydiv" id="iki">
+        <h1>Text 2</h1>
+        <p>Cras euismod sed nisl a tincidunt. Etiam mollis aliquet volutpat. Nullam ultricies convallis sem id congue. Vivamus rutrum imperdiet orci in luctus. In lacinia porttitor diam ac feugiat. </p>
+        <button class="divbtn">Learn More</button>
+    </div>
+    <div class="mydiv" id="uc">
+        <h1>Text 3</h1>
+        <p>In fermentum diam vel magna facilisis, id venenatis arcu vehicula. Quisque ut est bibendum, feugiat augue eu, commodo erat. Vestibulum venenatis sollicitudin mi.</p>
+        <button class="divbtn">Learn More</button>
+    </div>
+    <div class="mydiv" id="dort">
+        <h1>Text 4</h1>
+        <p>Integer nec gravida justo, et tempus diam. Curabitur ac sodales lorem. Vestibulum egestas vehicula ligula sed molestie. Sed nec ex vel massa pellentesque pharetra. Aliquam tempor sodales ex vitae finibus.</p>
+        <button class="divbtn">Learn More</button>
+    </div>
+    <div class="mydiv" id="bes">
+        <h1>Text 5</h1>
+        <p>Etiam accumsan orci at fermentum rutrum. Nullam et sem lacus. Morbi id aliquam enim. In ultricies ullamcorper lectus, ut ornare justo consequat ac. Morbi vehicula nibh odio, nec consectetur metus tempus ut.</p>
+        <button class="divbtn">Learn More</button>
+    </div>
+    </div>
+
+</div>
+
+</body>
+
+<script>
+
+var divgenisligi = document.getElementById("container").clientWidth;
+
+$(document).ready(function() {
+    $("#btn1").click(function() {
+        $("#slider").animate({left:"0px"},3000);
+    })
+
+    $("#btn2").click(function() {
+        $("#slider").animate({left:"-1356px"},3000);
+    })
+
+    $("#btn3").click(function() {
+        $("#slider").animate({left:"-2712"},3000);
+    })
+
+    $("#btn4").click(function() {
+        $("#slider").animate({left:"-4068px"},3000);
+    })
+
+    $("#btn5").click(function() {
+        $("#slider").animate({left:"-5424px"},3000);
+    })
+
+});
+
+</script>
+</html>
